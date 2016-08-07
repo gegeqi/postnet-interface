@@ -1,0 +1,28 @@
+div {
+    background-color:#c9e2b3;
+
+    color: #3e8f3e;
+    border: 1px solid #c0a16b;
+    text-align: center;
+    margin: 10% 30%;
+}
+label{
+    color: #00b3ee;
+}
+#err{
+    color: #c12e2a;
+    margin-left:15%;
+}
+#label{
+    position: fixed;
+    left: 42%;
+}
+#result{
+    margin-left: 10%;
+}
+#section2>hr{
+    margin: 2% 10px;
+}
+#section2{
+    color: #c0a16b;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "postnet",
+  "version": "1.0.0",
+  "description": "postnet",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "shary",
+  "license": "ISC",
+  "devDependencies": {
+    "cors": "^2.7.1",
+    "jasmine": "^2.4.1",
+    "jquery": "^3.1.0",
+    "superagent": "^2.1.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sharysy/postnet-base-for-big-classroom.git"
+  },
+  "keywords": [
+    "postnet"
+  ],
+  "bugs": {
+    "url": "https://github.com/sharysy/postnet-base-for-big-classroom/issues"
+  },
+  "homepage": "https://github.com/sharysy/postnet-base-for-big-classroom#readme"
+}
