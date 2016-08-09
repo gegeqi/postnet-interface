@@ -25,7 +25,7 @@ class PostAction {
             return 'init';
         } else {
             superAgent
-                .get('http://localhost:3000//express/postcode')
+                .get('http://localhost:3000//server/postcode')
                 .query({code: cmd})
                 .end(function (err, res) {
                     output('the barcode is' + res.text+'please input the postcode(eg:12345或123456789或12345-6789)/(back:b):');

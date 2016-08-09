@@ -6,18 +6,17 @@ const Barcode = require('../src/transformer/Barcode');
 const postcode = new Postcode();
 const barcode = new Barcode();
 
-var cors=require('cors');
 var express = require('express');
 var app = new express();
-app.use(cors());
+app.use(express.static('public/interface'));
 
-app.get('/express/postcode', function (req, res) {
-    console.log(req.query.code);
-    console.log(postcode.zipcodeTraBarcode(req.query.code));
+app.get('/postcode', function (req, res) {
+    /*console.log(req.query.code);
+    console.log(postcode.zipcodeTraBarcode(req.query.code));*/
     res.send(postcode.zipcodeTraBarcode(req.query.code));
 });
 
-app.get('/express/barcode', function (req, res) {
+app.get('/barcode', function (req, res) {
     console.log(barcode.barcodeTraZipcode(req.query.code));
     res.send(barcode.barcodeTraZipcode(req.query.code));
 });

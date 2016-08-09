@@ -2,7 +2,7 @@
  * Created by shiyue on 16-7-28.
  */
 'use strict';
-function loadTable(){
+function loadTable() {
     //noinspection BadExpressionStatementJS
     return ['||:::', ':::||', '::|:|', '::||:', ':|::|', ':|:|:', ':||::', '|:::|', '|::|:', '|:|::'];
 }
@@ -37,7 +37,9 @@ function checkCheckcode(barcodeArr) {
 function getZipcode(barcode) {
     let arr = barcode.map((item)=>loadTable().indexOf(item));
     let newArr = arr.slice(0, arr.length - 1);
-    newArr.splice(5, 0, '-');
+    if (newArr.length === 9) {
+        newArr.splice(5, 0, '-');
+    }
     return newArr.join('').toLocaleString() + '\ncd:' + arr.pop();
 }
 //编码转条码

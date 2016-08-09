@@ -28,7 +28,7 @@ function getBarcode(zipcode) {
     let zipArr = zipcode.split('-').join('').split('');
     let arr = zipArr.map((item)=>parseInt(item));
 
-    return '| ' + arr.map((item)=>loadTable()[item]).join('') + ' |';
+    return '| ' + arr.map((item)=>loadTable()[item]).join(' ') + ' |';
 
 }
 

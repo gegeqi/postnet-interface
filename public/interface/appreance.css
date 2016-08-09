@@ -1,0 +1,44 @@
+div {
+    background-color:#c9e2b3;
+    color: #3e8f3e;
+    border: 1px solid #c0a16b;
+    text-align: center;
+    margin: 10% 30%;
+}
+#info{
+    height: 30px;
+    width: 300px;
+}
+
+label{
+    color: #00b3ee;
+}
+#err{
+    color: #c12e2a;
+    margin-left:15%;
+}
+#label{
+}
+
+#result{
+    /*float: left;*/
+}
+
+#section2{
+    height: 250px;
+    color: #c0a16b;
+    overflow-y:scroll;
+}
+h3{
+    color: #a94442;
+}
+h4{
+    color: #4cae4c;
+}
+#tabel td{
+    border: 1px solid #ffffff;
+    border-left:none;
+    border-right:none;
+    font-size: medium;
+    height: 50px;
+}

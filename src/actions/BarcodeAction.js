@@ -23,7 +23,7 @@ class BarcodeAction {
             return 'init';
         } else {
             superAgent
-                .get('http://localhost:3000//express/barcode')
+                .get('http://localhost:3000//server/barcode')
                 .query({code: cmd})
                 .end(function (err, res) {
                     output('the post code is ' + res.text+"please input the barcode(include |或:或 )/(back:b):");
